@@ -1,0 +1,13 @@
+jQuery.ajax( {
+  url: 'https://api.ipdata.co',
+  type: 'POST',
+  dataType: 'jsonp',
+  success: function(location) {
+    // If the visitor is browsing from EU.
+    if (location.country_code === 'EU') {
+      // Provide access to privacy options.
+      jQuery('.cookie-notice-container').css('display','block');
+      jQuery('.gdpriteu').empty();
+    }
+	}
+});

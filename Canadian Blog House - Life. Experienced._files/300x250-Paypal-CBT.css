@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* CSS Document */
+ *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PayPalSans';
+  src: url('PayPalSansBig-Regular.woff') format('woff'); 
+  
+}
+
+@font-face {
+  font-family: 'Dharma';
+  src: url('DharmaGothicE_Bold_I.woff') format('woff'); 
+  src: url('DharmaGothicE_Bold_I.woff2') format('woff2'); 
+}
+
+.border {
+   background-color:#000000;
+   position:absolute;
+   z-index:99999;
+
+}
+/* border edge ids */
+#b-left {
+	width:1px;
+	height:250px;	
+	
+}
+#b-right {
+	width:1px;
+	height:100%;
+	right:0;
+}
+#b-top {
+	height:1px;
+	width:100%;
+}
+#b-bottom {
+	height:1px;
+	width:100%;
+	bottom:0;
+}
+body, body * {
+	vertical-align:baseline;
+	border:0 none;
+	outline:0;
+	padding:0;
+	margin:0;
+}
+
+
+
+#PanelStart{
+	position:absolute;
+	display:inline-block;
+}
+
+#container{
+	position:absolute;
+	display:inline-block;
+	width:300px;
+	height:250px;
+	top:0px;
+	left:0px;
+	margin:auto;
+}
+
+#Disclaimer{
+	position:absolute;
+	display:inline-block;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	margin:auto;
+	z-index:2000;
+}
+
+#contents {
+	position:absolute;
+	display:inline-block;
+	top: 0px;
+	right:0px;
+	width:300px;
+	height:250px;
+	border:1px solid #FFF;
+	background-color:#000;
+	z-index:100;
+	display:block;
+	overflow: hidden;
+}
+
+#BG01Image{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:400;
+	width:300px;
+	height:250px;
+}
+
+#textBG01,#textBG02{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 400;
+	width: 300px;
+	height: 250px;
+	background-color: #f39600;
+	
+}
+
+#DiscBG{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:400;
+	width:300px;
+	height:250px;
+	background-color:#000;
+	z-index: 4000;
+	opacity:0.8;
+}
+
+#DiscBtn{
+	position:absolute;
+	width:41px;
+	height:22px;
+	background-image: url("infoBtn.png");
+	top:7px;
+	right:7px;
+	z-index:400299;
+	cursor:pointer;
+}
+
+#DiscText{
+	width:300px;
+	height:250px;
+	display: inline-block;
+	position:absolute;
+	font-family: 'PayPalSans', sans-serif;
+	background-color: transparent;
+    padding:40px;
+    font-size: 13px;
+    text-align: left;
+    color: #FFF;
+	z-index:4001;
+}
+
+.TextBoxes{
+	font-family: 'Dharma', sans-serif;
+	padding-left: 15px;
+	padding-top: 15px;
+	line-height: 36px;
+	font-size: 46px;
+	color: #FFF;
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	z-index: 500;
+	top: 0px;
+	left: 0px;
+	text-transform: uppercase;
+}
+
+.Text01{
+	padding-left:26px!important;
+}
+.Text02{
+	padding-left:19px!important;
+	padding-top:57px!important;
+}
+.Text03{
+	padding-left:12px!important;
+	padding-top:100px!important;
+}
+.Text04{
+	padding-left:12px!important;
+	padding-top:143px!important;
+}
+
+#FrameElements #Frame03 #TextF0304 {
+	padding-left:12px!important;
+	padding-top:140px!important;
+}
+
+
+#FrameElements #Frame03 #TextF0304 {
+	font-size: 12px;
+	font-style: italic;
+	text-decoration: underline;
+	color: #ffffff;
+	font-family: 'PayPalSans', sans-serif;
+	line-height: 14px;
+	text-transform:none; 
+}
+
+/*-Non 'Money' PayPal Logo */
+#LogoPayPal{
+	position:absolute;
+	width:165px;
+	height:48px;
+	right:0px;
+	bottom:0px;
+	background-image: url("Logo-PayaPal.png");
+	z-index:1000;
+}
+
+
+/*#LogoPayPal{
+	position:absolute;
+	width:224px;
+	height:48px;
+	right:0px;
+	bottom:0px;
+	background-image: url("Logo-PayaPal_02.png");
+	z-index:1000;
+}
+*/
+#LogoOther{
+	position:absolute;
+	width:300px;
+	height:250px;
+	left:0px;
+	bottom:0px;
+	background-image: url("Logo-Other.png");
+	z-index:1000;
+}
+
+#CornerLeftF01, #CornerLeftF02, #CornerLeftF03, #CornerLeftF04{
+	position:absolute;
+	width:440px;
+	height:250px;
+	right:-30px;
+	background-color: transparent;
+	z-index:2000;
+}
+
+#CornerRightF01, #CornerRightF02, #CornerRightF03, #CornerRightF04{
+	position:absolute;
+	width:440px;
+	height:250px;
+	right:-440px;
+	background-color: transparent;
+	z-index:2000;
+}
+
+#OverlaySlideF0101,#OverlaySlideF0102, #OverlaySlideF0201, #OverlaySlideF0202,  #OverlaySlideF0301, #OverlaySlideF0302,  #OverlaySlideF0401, #OverlaySlideF0402{
+	position:absolute;
+	width:440px;
+	height:250px;
+	right:-30px;
+	background-color: transparent;
+	z-index:2000;
+}
+
+
+.OverlayColour{
+	position:absolute;
+	margin: 0 auto;
+	width:440px;
+	height:250px;
+	z-index:2001;
+	-webkit-transform:skew(-9deg);
+  	-moz-transform:skew(-9deg);
+  	transform:skew(-9deg);
+}
+
+.OverlayColour01{
+	background: linear-gradient(to bottom, rgba(225,12,91,1) 0%,rgba(250,127,15,1) 43%);
+}
+.OverlayColour02{
+	background-color:#62058b;
+}
+
+
+
+#CTA{
+	display: inline-block;
+	position:absolute;
+	font-family: 'Dharma', sans-serif;
+	right:14px;
+	background-color: transparent;
+	z-index:1000;
+	-webkit-transform:skew(-9deg);
+  	-moz-transform:skew(-9deg);
+  	transform:skew(-9deg);
+	line-height: 13px;
+    padding: 8px 26px 10px 26px;
+    font-size: 20px;
+    text-align: center;
+	bottom: 53px;
+	background-color: #009cde;
+    color: #FFF;
+	height:27px;
+	letter-spacing: 0.8px;
+}
+    
+#exitbtn{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:transparent;
+	cursor:pointer;
+	z-index:4000;
+}
